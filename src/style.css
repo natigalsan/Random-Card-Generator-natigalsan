@@ -1,19 +1,12 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background: rgba(0, 128, 0, 0.445);
+  background: rgba(0, 128, 0, 0.198);
 }
 
 .card {
   position: relative;
-  float: left;
-  margin-right: 10px;
-  margin-top: 20px;
+  margin: 10px auto 10px auto;
   width: 150px;
   height: 220px;
   border-radius: 10px;
@@ -25,10 +18,19 @@ body {
   text-align: center;
   font: 73.33px georgia, Times New Roman, serif;
 }
-.item1 {
-  text-align: left;
-  font: 30pxpx georgia, Times New Roman, serif;
+
+.row {
+  height: 33%;
 }
-.item2 {
+#row1 {
+  text-align: left;
+  align-items: center;
+  justify-content: left;
+  padding-left: 15px;
+}
+#row3 {
   text-align: right;
+  align-items: center;
+  justify-content: right;
+  padding-right: 15px;
 }
