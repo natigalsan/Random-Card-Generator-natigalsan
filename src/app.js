@@ -12,10 +12,10 @@ Button.onclick = function displayCards() {
   //voy a crear la función que accederá a los iconos y números de manera aleatoria:
 
   const cards = [
-    (cards[0] = "src/heart_red.png"),
-    (cards[1] = "src/trebol.png"),
-    (cards[2] = "src/rombo_rojo.png"),
-    (cards[3] = "/srcPicas.png")
+    "src/img/heart_red.png",
+    "src/img/trebol.png",
+    "src/img/rombo_rojo.png",
+    "src/img/Picas.png"
   ];
   //var cards = ["<div class='palo rojo'>♥</div>", "<div class='palo rojo'>♦</div>", "<div class='palo negro'>♣</div>", "<div class='palo negro'>♠</div>"];
   //const cards = ["♦", "♥", "♠", "♣"];
@@ -38,12 +38,12 @@ Button.onclick = function displayCards() {
   let singleNumbers = numbers[Math.floor(Math.random() * numbers.length)];
   // restablecer el cuerpo del sitio web con la nueva salida html:
   document.querySelector(".card").innerHTML = ` <div class="row" id="row1">
-      <span class="item1">${singleCard}</span>
+      <img src='${singleCard}' class="item1" />
     </div>
     <div class="row" id="row2">
       <p>${singleNumbers}</p>
     </div>
     <div class="row" id="row3">
-      <span class="item2">${singleCard}</span>
+    <img src='${singleCard}' class="item2" />
     </div>`;
 };

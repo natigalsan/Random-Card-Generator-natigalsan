@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background: rgba(0, 128, 0, 0.198);
+  background: rgba(14, 233, 14, 0.656);
 }
 
 .card {
@@ -33,4 +33,9 @@ body {
   align-items: center;
   justify-content: right;
   padding-right: 15px;
+}
+.item1,
+.item2 {
+  height: 30px;
+  width: 60px;
 }
